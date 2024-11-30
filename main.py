@@ -28,7 +28,7 @@ def main() -> None:
         messagebox.showerror(msg_not_found_pKye)
         sys.exit()
 
-    with open(ssh_pKye, mode="w") as f:
+    with open(ssh_pKye, mode="r") as f:
         pkey = f
 
     # SFTP接続設定
